@@ -4,13 +4,13 @@
 <title>Serverless Voting System - Demo Page</title>
 <style>
 #youtube-cta {
-width: 80%;
-padding: 1%;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 2%;
-border: 1px solid black;
-box-shadow: 0px 0px 10px lightgrey;
+  width: 80%;
+  padding: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px lightgrey;
 }
 </style>
 </head>
@@ -19,14 +19,14 @@ box-shadow: 0px 0px 10px lightgrey;
   <h2>YouTube Tutorial?</h2>
   <p>Would you prefer this post as a live walkthrough on Youtube?</p>
   <p>Let me know by giving a thumbs-up (no login / account required).</p>
-  <img id="votebtn" src="/images/thumb-up.png">
+  <img id="votebtn" src="images/thumb-up.png">
   <p id="vote-confirmed">Thanks. Your vote has been recorded.</p>
 </div>
   
 <script>
 document.getElementById('votebtn').onclick = function(){
   var http = new XMLHttpRequest();
-  var url = 'URL HERE TODO';
+  var url = 'https://lfjamtdf17.execute-api.ap-southeast-2.amazonaws.com/default/VoteSystemDemo';
   http.open('POST', url);
 
   //Send the proper header information along with the request
